@@ -1,0 +1,17 @@
+// Extension manifest
+{
+  "manifest_version": 2,
+  "name": "Inflation Converter",
+  "version": "1.0",
+  "description": "Convert dollar figures on webpages to equivalent amounts in another year",
+  "permissions": ["tabs", "http://*/*", "https://*/*"],
+  "browser_action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
