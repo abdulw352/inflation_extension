@@ -1,0 +1,32 @@
+// popup.html
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Inflation Converter</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        padding: 10px;
+        width: 300px;
+      }
+      h2 {
+        margin-top: 0;
+      }
+      input {
+        width: 100%;
+        margin-bottom: 10px;
+      }
+      button {
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Inflation Converter</h2>
+    <label for="targetYear">Target Year:</label>
+    <input type="number" id="targetYear" value="2024" min="1900" max="2100">
+    <button id="convertButton">Convert Dollars</button>
+    <script src="popup.js"></script>
+  </body>
+</html>
